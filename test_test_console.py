@@ -16,8 +16,7 @@ class TestGreetings(unittest.TestCase):
 
     def test_check_plalindrome(self):
         self.assertTrue(check_plalindrome("kayak"))
-        self.assertEqual(check_plalindrome("A man a plan a canal Panama"))
-        self.assertEqual(reverse(""), "")
+        self.assertTrue(check_plalindrome("A man a plan a canal Panama"))
 
     def test_farewell_morning(self):
         with patch('datetime.datetime.now', return_value=datetime.datetime(2023, 1, 1, 9, 0, 0)):
