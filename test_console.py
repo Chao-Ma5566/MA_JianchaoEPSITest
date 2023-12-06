@@ -45,7 +45,7 @@ def main():
         else:
             print(reverse(entry))
 
-        if input("Do you want to exit? (y/n): ").lower() == 'y':
+        if get_user_input("Do you want to exit? (y/n): ").lower() == 'y':
             atexit.register(farewell)
             break
 
