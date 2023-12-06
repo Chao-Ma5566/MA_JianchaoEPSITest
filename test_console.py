@@ -23,6 +23,9 @@ def check_plalindrome(word):
     else:
         return False
     
+def get_user_input(prompt="Enter your word: "):
+    return input(prompt)
+
 def farewell():
     now = datetime.datetime.now()
     hour = now.hour
@@ -36,7 +39,7 @@ def main():
     print(salutation())
     
     while True:
-        entry = input("Enter your word: ")
+        entry = get_user_input()
         if(check_plalindrome(entry)):
             print("Bien dit, 你太棒了") 
         else:
